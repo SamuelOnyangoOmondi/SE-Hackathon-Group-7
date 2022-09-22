@@ -8,18 +8,10 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h2>Registration Form</h2>
+    <h2>Group 7 - Registration Form</h2>
     <div class="registration-form">
-      <form name="registration">
-        <div class="form-field-wrapper">
-          <label for="phone_number">Phone number: </label>
-          <input
-            type="number"
-            id="number"
-            name="number"
-            placeholder="Enter your number.."
-          />
-        </div>
+      <form name="registration" onsubmit="return false ">
+       
 
         <div class="form-field-wrapper">
           <label for="phone_number">Full name: </label>
@@ -28,8 +20,10 @@
             type="text"
             id="full_name"
             name="full_name"
-            placeholder="Enter your full_name.."
+            placeholder="Enter your full name.."
           />
+          <span id="fullnamemessage"></span>
+
         </div>
 
         <div class="form-field-wrapper">
@@ -41,6 +35,8 @@
             name="username"
             placeholder="Enter your username.."
           />
+          <span id="usernamemessage"></span>
+
         </div>
         <div class="form-field-wrapper">
           <label for="email">Email: </label>
@@ -59,6 +55,8 @@
             name="password"
             placeholder="Enter your password.."
           />
+          <span id="passwordmessage"></span>
+
         </div>
         <div class="form-field-wrapper">
           <label for="date_of_birth">Date of Birth: </label>
@@ -68,7 +66,19 @@
             name="date"
             placeholder="Enter your date of birth.."
           />
+          <span id="datemessage"></span>
+
         </div>
+        <div class="form-field-wrapper">
+            <label for="phone_number">Phone number: </label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Enter your number.."
+            />
+            <span id="phonenumbermessage"></span>
+          </div>
 
         <div class="form-field-wrapper">
           <label for="phone_number">Organization ID: </label>
@@ -80,10 +90,10 @@
           />
         </div>
 
-        <input type="submit" value="Submit" onclick="validateForm()" />
+        <input type="submit" value="Submit" onclick="validateForm()"/>
       </form>
     </div>
 
-    <script src="./phonevalidator.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
