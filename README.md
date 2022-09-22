@@ -9,7 +9,7 @@ Thank you for your time to contribute for this repository. Read through the foll
 
 - To clone this repository to your local machine, run
 ```shell
-git clone https://github.com/wubeshetA/Student-Registrar
+git clone https://github.com/SamuelOnyangoOmondi/SE-Hackathon-Group-7
 ```
 - Create a new branch in your local machine preferebly with the your first name as prefix and the word **dev** following it.
 ```shell
