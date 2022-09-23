@@ -13,7 +13,4 @@ function email_validator(){
 //No numbers allowed
 //No uppercase letters allowed
 //No symbols allowed (except one @)
-// /^w.w(a-z).email
-// ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
-// ^[\w\.]+([\w]+@)+[\w]+\.)+[w]$
-// ^[\w]+\.+[a-z]+@+[a-z]*+\.+[a-z]$
+ 
