@@ -73,7 +73,7 @@ function validateForm() {
     let usernameRegex = /^([A-Z]\d*[a-z][A-Z]?)([a-z\d])[^A-Z]$/;
 
     if(usernameRegex.test(username)){
-        usernamemessage = "Your username" + username + "is valid";
+        usernamemessage = "Your username " + username + " is valid";
       document.getElementById("usernamemessage").innerHTML = usernamemessage;
       document.getElementById("usernamemessage").style.color = "green";
 
@@ -81,6 +81,22 @@ function validateForm() {
         usernameerror = "Your username " + username + " is not valid";
         document.getElementById("usernamemessage").innerHTML = usernameerror;
         document.getElementById("usernamemessage").style.color = "red";
+    }
+
+    // Validate email
+    let email = document.forms["registration"]["email"].value;
+    let emailregex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+    if (emailregex.test(email)) {
+        emailmessage = "Your email " + email + " is valid";
+      document.getElementById("emailmessage").innerHTML = emailmessage;
+      document.getElementById("emailmessage").style.color = "green";
+
+
+    } else {
+        emailerror = "Your email  " + email  + " is not valid";
+        document.getElementById("emailmessage").innerHTML = emailerror;
+        document.getElementById("emailmessage").style.color = "red";
     }
 
   }
