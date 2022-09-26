@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+input {
+  display: block;
+  width: 60%;
+  padding: 0.5rem;
+  margin: 8px 0;
+}
+
+#error-message {
+  color: red;
+}
+
+.btn {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 8px 0;
+}
