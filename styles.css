@@ -1,4 +1,4 @@
-html {
+/* html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@ input {
   cursor: pointer;
   margin: 8px 0;
 }
-=======
+======= */
 body{
 
 display: flex;
